@@ -1,0 +1,199 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+  background-image: url(https://illustrators.ru/uploads/illustration/image/1562681/%D0%9C%D0%B0%D0%B4%D1%80%D0%B8%D0%B4_%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C_1_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg);
+
+    
+  
+}
+
+.wrapper {
+    
+}
+.container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: seashell;
+    box-shadow: 0 5px 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+   
+}
+.nav {
+    margin-right: 100px;
+    padding-left: 10px
+
+}
+
+.nav>a {
+    padding: 20px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+    font-weight: bold;
+}
+.nav>a:hover {
+    color: #fff;
+    background-color: #040404;
+}
+
+.nav-btn {
+   display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav-btn {
+        font-size: 40px;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: seashell;
+        color: black;
+        display: block;
+        cursor: pointer;
+    }
+    .nav {
+        display: none;
+        margin-right: 0px;
+        
+    }
+    .nav a {
+        display: block;
+    }
+    .drop:hover .nav {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: seashell;
+    }
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://illustrators.ru/uploads/illustration/image/1562681/%D0%9C%D0%B0%D0%B4%D1%80%D0%B8%D0%B4_%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C_1_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+
+.intro {
+    display: flex;
+    max-width: 1200px;
+   
+    margin: 0 auto;
+}
+
+.container2 {
+  
+    margin-top: 20px;
+    display: block;
+    max-width: 500px;
+    
+}
+
+.text {
+    font-weight: bold;
+    padding: 20px;
+}
+
+.Grand {
+    text-align: center;
+}
+
+.container3{
+    margin-top: 20px;
+}
+
+.Playboy {
+    max-width: 100%;
+}
+
+.timer__items {
+    display: flex;
+    font-size: 48px;
+  }
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+
+  body {
+    text-align: center;
+    background: #00ecb9;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  .countdown-title {
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+  }
+  
+  .countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00bf96;
+    display: inline-block;
+  }
+  
+  .countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816a;
+    display: inline-block;
+  }
+  
+  .countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }
